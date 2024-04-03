@@ -1,19 +1,13 @@
-# LocalChatLLM
+# LocalChatLLM-edu
 
-LocalChatLLM 是一个由 **YGeeker Pioneer** 计划主导的开源项目，旨在实现开箱即用的本地化离线自然语言语音交互。
-
-<a href="https://www.ygeeker.com">
-  <img width="180" alt="Sponsored by YGeeker" src="https://www.ygeeker.com.cn/badge/sponsor.png">
-</a >
-
-你需要注意的是，本项目支持中英双语。而不同语言的文档中使用的模型不同：中文使用的是'qwen:7b'，而英文版本为'gemma:7b'，请按照需要选择模型。[For English? Please click here.](./README_EN.md)
+此项目基于 [LocalChatLLM](https://github.com/Gloridust/LocalChatLLM)，旨在通过开箱即用的本地化离线自然语言语音交互形式，实现
 
 ## 主要技术栈
 
 - [x] Python  
 - [x] ollama  
 - [x] qwen
-- [x] openai-whisper  
+- [x] whisper  
 - [x] pyttsx3  
 
 ## 功能实现
@@ -23,39 +17,15 @@ LocalChatLLM 是一个由 **YGeeker Pioneer** 计划主导的开源项目，旨�
 - [x] 语音合成 - pyttsx3
 - [ ] 大模型实现自然语言合成
 - [ ] 语音唤醒
-- [ ] 自动结束录音
-- [ ] 分布式运行
-
-## 更新日志
-
-### v1.1.1
-
-- 将Whisper模型改用'small'，以提高准确性
-
-### v1.1.0
-
-- 加入运行时间检测功能，能统计每一次循环的处理时间：
-
-```
-asr time: 2.155439000001934 #语音转文字时间
-get_response time: 4.139052400001674  #大语言模型处理时间
-all time: 6.295364899997367 #总处理时间
-```
-
-### v1.0.1
-
-- 加入文本检测，如果没有人说话将自动结束程序
-
-### v1.0.0
-
-- 实现了最基本的自然语言语音交流功能
+- [ ] 自动结束录音 (静音检测)
+- [ ] 局域网分布式运行
 
 ## 部署
 
 1. clone 本仓库：
 
 ```bash
-git clone https://github.com/Gloridust/LocalChatLLM.git
+git clone https://github.com/Gloridust/LocalChatLLM-edu.git
 cd ./LocalChatLLM
 ```
 
@@ -115,26 +85,6 @@ ollama create localchatllm-qwen-7b -f ./modelfile_cn
 ```bash
 whisper audio.wav --model small
 ```
-
-6. 调整其他配置
-
-打开'start.py'，你可以看见一些可以修改的配置：
-
-```python
-######config#####
-
-# For Chinese use 'qwen:7b'
-model_name = 'localchatllm-qwen-7b' 
-
-# For English use 'gemma:7b'
-# model_name = 'localchatllm-gemma-7b' 
-
-whisper_model = "small"
-whisper_language = "zh"
-#################
-```
-
-在[tokenizer.py](https://github.com/openai/whisper/blob/main/whisper/tokenizer.py)查看所有支持的语言
 
 大功告成！
 
