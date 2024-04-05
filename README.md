@@ -76,7 +76,7 @@ pip install setuptools-rust
 4. Pull 所需要的 ollama 模型并定制：
 
 ```bash
-ollama pull qwen:7b
+ollama pull qwen:4b
 ollama create localchatllm-edu -f ./modelfile_cn
 ```
 
