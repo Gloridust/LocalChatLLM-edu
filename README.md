@@ -1,6 +1,6 @@
 # LocalChatLLM-edu
 
-此项目基于 [LocalChatLLM](https://github.com/Gloridust/LocalChatLLM)，旨在通过开箱即用的本地化离线自然语言语音交互形式，实现
+此项目基于 [LocalChatLLM](https://github.com/Gloridust/LocalChatLLM)，旨在通过开箱即用的本地化离线自然语言语音交互形式，实现儿童陪伴聊天早教等功能。
 
 ## 主要技术栈
 
