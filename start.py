@@ -9,7 +9,7 @@ import sys
 import time
 
 ######config#####
-model_name = 'localchatllm-qwen-7b' 
+model_name = 'localchatllm-edu' 
 whisper_model = "small"
 whisper_language = "zh"
 #################

@@ -26,7 +26,7 @@
 
 ```bash
 git clone https://github.com/Gloridust/LocalChatLLM-edu.git
-cd ./LocalChatLLM
+cd ./LocalChatLLM-edu
 ```
 
 2. 从官网安装 [ollama](https://ollama.com/download)
@@ -77,7 +77,7 @@ pip install setuptools-rust
 
 ```bash
 ollama pull qwen:7b
-ollama create localchatllm-qwen-7b -f ./modelfile_cn
+ollama create localchatllm-edu -f ./modelfile_cn
 ```
 
 5. 初始化并尝试运行whisper：
