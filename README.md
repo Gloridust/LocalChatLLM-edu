@@ -73,10 +73,9 @@ scoop install ffmpeg
 pip install setuptools-rust
 ```
 
-4. Pull 所需要的 ollama 模型并定制：
+4. 拉取定制模型：
 
 ```bash
-ollama pull qwen:4b
 ollama create localchatllm-edu -f ./modelfile_cn
 ```
 
