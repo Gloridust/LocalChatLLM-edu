@@ -10,7 +10,7 @@ import time
 
 ######config#####
 model_name = 'localchatllm-edu' 
-whisper_model = "small"
+whisper_model = "base"
 whisper_language = "zh"
 #################
 
@@ -110,3 +110,4 @@ if __name__ == "__main__":
 
     while True:
         main_loop()
+        input(">Press Enter to continue")

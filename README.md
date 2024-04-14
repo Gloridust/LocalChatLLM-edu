@@ -82,7 +82,7 @@ ollama create localchatllm-edu -f ./modelfile_cn
 5. 初始化并尝试运行whisper：
 
 ```bash
-whisper audio.wav --model small
+whisper audio.wav --model base
 ```
 
 大功告成！
