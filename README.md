@@ -101,4 +101,3 @@ python start.py
 - [OpenAI-Whisper](https://github.com/openai/whisper)
 - [Ollama](https://github.com/ollama/ollama-python)
 - [Qwen](https://huggingface.co/Qwen)
-- [Gemma](https://huggingface.co/Qwen)
